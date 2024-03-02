@@ -106,8 +106,9 @@ bootstrap style).  I am documenting based on my current notions, and as I learn
 updating / improving the documentation.  That means, maintaining a history (this
 is why GitHub for Documentation in the first place), a historical document that
 should cover the basics of the learning process, a document that describes the
-mature bootstrap process (think reproducible and proven DR), and a document that
-describes the current system and it use as currently implemented.
+mature bootstrap process (think reproducible and proven DR, improved through
+itteration), and a document that is maintained describes the current system and
+it use as currently implemented.
 
 So this will become the first history document, but it also represents this
 moment in time with a synopsis of what I have running, little to nothing new
