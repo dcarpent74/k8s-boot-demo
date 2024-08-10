@@ -7,7 +7,7 @@ Downloaded Fedora Server 40
 Created 20GB drive
 
 ```
-# lvcreate -n f40-test-srv0 -l 1280 k0-virtvg /dev/sdb13
+# lvcreate -n f40-test-srv0 -l 1280 bk0-virtvg /dev/sdb13
 ```
 
 expanded from 5GB linear to 20GB 4 stripe raid6
