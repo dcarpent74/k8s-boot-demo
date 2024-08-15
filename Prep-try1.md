@@ -12,7 +12,7 @@ Created 20GB drive
 
 expanded from 5GB linear to 20GB 4 stripe raid6
 
-Virtual machine def:
+Virtual machine def (this was built using virt-manager GUI):
 
 ```
 # virsh dumpxml f40-test-srv0
