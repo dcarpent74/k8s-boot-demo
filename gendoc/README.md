@@ -36,3 +36,6 @@ But for now, both are sort of the same thing.
 So how about a quick stab at some conventions:
 1. History: rather than modify away stuff, lets try to build a document history area (a sub-directory). Files should have dates as part of the file names: YYYYMMDD-RRR[-YYYYMMDD-RRR]-<text_description_name>.<md|txt|???> The first date should be a source date or optionally a copied out date followed by a source date.  After that a descriptive file name.  Efforts to clarify dates or names, namechanges, etc should be included in the document or in a companion file. Rather than throw away old documents or making major revisions, let's start by collecting any history that we might want to keep.
 2. Learning: Often derrived from history, this would be more specifc learnings as we go. gendoc learnings might eventually head off to the gendoc repostiory once there is such a thing (or at least learnings for this project as an exmaple gendoc project).
+3. Documenatation process: As things progress this becomes the desciption of how the documentation is maintained.
+4. Technical process: In this case this is the actual documentation for this project (k8s-boot-demo).
+5. Notes: Unincorporated notes while working on this project.
