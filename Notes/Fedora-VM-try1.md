@@ -12,14 +12,14 @@ Created 20GB drive
 
 expanded from 5GB linear to 20GB 4 stripe raid6
 
-Virtual machine def (this was built using virt-manager GUI):
-SLES 15.5 hypervisor (libvirt 9.0.0-150500.6.23.1 , virt-manager 4.1.0-150500.3.6.1), qemu 7.1.0-150500.49.15.1)
-Fedora - unknown
-q35 - BIOS
-2 CPU
-2048 MB RAM
-above 20G volume for storage.
-single ethernet (connected to whichever network will be used for dev work).
+Virtual machine def (this was built using virt-manager GUI):  
+SLES 15.5 hypervisor (libvirt 9.0.0-150500.6.23.1 , virt-manager 4.1.0-150500.3.6.1), qemu 7.1.0-150500.49.15.1)  
+Fedora - unknown  
+q35 - BIOS  
+2 CPU  
+2048 MB RAM  
+above 20G volume for storage.  
+single ethernet (connected to whichever network will be used for dev work).  
 
 ```
 # virsh dumpxml f40-test-srv0
