@@ -1,12 +1,15 @@
 On CentOS 7 HV:
 
-- /var/lib/libvirt/iamges # wget https://download.fedoraproject.org/pub/fedora/linux/releases/39/Server/x86_64/iso/Fedora-Server-dvd-x86_64-39-1.5.iso
+```
+/var/lib/libvirt/images # wget https://download.fedoraproject.org/pub/fedora/linux/releases/39/Server/x86_64/iso/Fedora-Server-dvd-x86_64-39-1.5.iso
 
-- /var/lib/libvirt/iamges # wget https://download.fedoraproject.org/pub/fedora/linux/releases/39/Server/x86_64/iso/Fedora-Server-39-1.5-x86_64-CHECKSUM
 
-- /var/lib/libvirt/iamges # curl -O https://fedoraproject.org/fedora.gpg
+/var/lib/libvirt/images # wget https://download.fedoraproject.org/pub/fedora/linux/releases/39/Server/x86_64/iso/Fedora-Server-39-1.5-x86_64-CHECKSUM
 
-- /var/lib/libvirt/iamges # gpg --list-keys --with-fingerprint --keyid-format long --keyring ./fedora.gpg
+/var/lib/libvirt/images # curl -O https://fedoraproject.org/fedora.gpg
+
+/var/lib/libvirt/images # gpg --list-keys --with-fingerprint --keyid-format long --keyring ./fedora.gpg
+
 ./fedora.gpg
 ------------
 pub   4096R/DB4639719867C58F 2021-02-04
@@ -33,12 +36,12 @@ pub   4096R/0727707EA15B79CC 2023-01-24
       Key fingerprint = 115D F9AE F857 853E E844  5D0A 0727 707E A15B 79CC
 uid                          Fedora (40) <fedora-40-primary@fedoraproject.org>
 
-- /var/lib/libvirt/iamges # Rgpgv --keyring ./fedora.gpg Fedora-Server-39-1.5-x86_64-CHECKSUM
-gpgv: Signature made Fri 03 Nov 2023 09:51:06 AM CDT using RSA key ID 18B8E74C
+/var/lib/libvirt/images # gpgv --keyring ./fedora.gpg Fedora-Server-39-1.5-x86_64-CHECKSUM  
+gpgv: Signature made Fri 03 Nov 2023 09:51:06 AM CDT using RSA key ID 18B8E74C  
 gpgv: Good signature from "Fedora (39) <fedora-39-primary@fedoraproject.org>"
 
-- /var/lib/libvirt/iamges # sha256sum -c gpgv --keyring ./fedora.gpg Fedora-Server-39-1.5-x86_64-CHECKSUM
-Fedora-Server-dvd-x86_64-39-1.5.iso: OK
-sha256sum: Fedora-Server-netinst-x86_64-39-1.5.iso: No such file or directory
+/var/lib/libvirt/images # sha256sum -c ./fedora.gpg Fedora-Server-39-1.5-x86_64-CHECKSUM  
+Fedora-Server-dvd-x86_64-39-1.5.iso: OK  
+sha256sum: Fedora-Server-netinst-x86_64-39-1.5.iso: No such file or directory  
 Fedora-Server-netinst-x86_64-39-1.5.iso: FAILED open or read
 
